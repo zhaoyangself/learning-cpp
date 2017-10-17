@@ -1,0 +1,34 @@
+aprogram whichj reads an inteper S 
+and comput how many sequential inputers should be added to get a value 
+which is greater than S and odd.
+
+//---------------
+
+#include <iostream >
+using  namespace  std;
+int  main()
+{
+    int s;
+    int sum;
+    int steps;
+    int number;
+   cout<<"give s"<<endl;
+   cin>>s;
+   sum=0;
+   steps=0;
+   number=1;
+   while(true)
+   {
+
+       sum=sum+number;
+       steps++;
+       if(sum%2==1&& sum>s)
+       {
+           break;
+       }
+       number++;
+   }
+   cout<<"you should add:  "<<steps<<"  times"<<endl;
+   return 0;
+
+}
